@@ -1,0 +1,136 @@
+body {
+	background-image:url('./images/wood.jpg');
+	font-family: tahoma, helvetica, arial, sans-serif;
+	color: #6B6B6B;
+}
+
+#container {
+
+}
+
+#layoutTable{
+	background-image:url(./images/dusty_paper.png);
+	border-collapse: collapse;
+	/* CSS 3 */
+	-moz-box-shadow: 5px 5px 5px #666;
+	-webkit-box-shadow: 5px 5px 5px #666;
+	box-shadow: 5px 5px 5px #666;
+	/* End CSS 3 */
+}
+
+.sidebar{
+	color: white;
+	text-align: center;
+	font-family: ‘Trebuchet MS’, Helvetica, sans-serif;
+	font-size: 24px;
+	font-weight: bold;
+	/* CSS 3 Styles */
+	text-shadow: 0.1em 0.1em #333;
+	/*
+	-moz-box-shadow: 2px 0px 1px #666;
+	-webkit-box-shadow: 2px 0px 1px #666;
+	box-shadow: 2px 0px 1px #666;
+	*/
+	/* End CSS 3 */	
+}
+
+.informationSB{	background-color: #B32E2F; }
+.experienceSB{ background-color: #4A606A; }
+.skillsSB{ background-color: #6991AA; }
+.educationSB{ background-color: #87AD98; }
+.interestsSB{ background-color: #DF5E75; }
+
+.content{
+	text-align: left;
+}
+
+.date{
+	color: #B05956;
+	border: 2px double #CCCCCC;
+	/* CSS 3 */
+	-moz-box-shadow: 3px 3px 3px #666;
+	-webkit-box-shadow: 3px 3px 3px #666;
+	box-shadow: 3px 3px 3px #666;
+	/* End CSS 3 */
+}
+
+.italics{
+	font-style: italic;
+}
+
+p{
+	color: #6B6B6B;
+}
+
+h1{
+	color: #3B3B3B;
+}
+
+h2{
+	line-height: 1px;
+	/*display: inline; */
+	font-size: 20px;
+	font-weight: normal;
+	color: #786557;
+}
+
+h3{
+	font-size: 16px;
+	font-style: italic;
+	font-weight: normal;
+	color: #786557;
+}
+
+ul{
+	color: #5A5A5A;
+}
+
+.informationTable{
+	font-size: 16px;
+}
+
+.informationTableLeft{
+	font-weight: bold;
+	width: 50%;
+	line-height: 26px;
+	color: #5A5A5A;
+	border-bottom: 1px dashed #BFBEBE;
+}
+
+.informationTableRight{
+	text-align: right;
+	width: 50%;
+	line-height: 26px;
+	border-bottom: 1px dashed #BFBEBE;
+}
+#profilePictureArea{
+	background-color: #FFFFFF;
+	border: 2px double #CCCCCC;
+	text-align: center;
+	/* CSS 3 */
+	-moz-box-shadow: 3px 3px 3px #666;
+	-webkit-box-shadow: 3px 3px 3px #666;
+	box-shadow: 3px 3px 3px #666;
+	/* End CSS 3 */
+}
+
+.profileImage{
+	border: 1px solid #CCCCCC;
+}
+
+.socialMediaButtons{
+	width: 40px;
+	height: 40px;
+}
+
+a, a:link, a:visited {
+	color: #4A9DC6;
+}
+
+.noBorder{
+	border: 0px;
+}
+
+.skillsCategory {
+	font-weight: bold;
+}
