@@ -93,7 +93,6 @@ ul {
 #menu ul li.icons a:hover{
 	color: #fff;
 	background: url(../images/menu_hover_icons.png) no-repeat;
-	z-index: 100;
 }
 /* End of Social Media Icons */
 /* end of menu */
