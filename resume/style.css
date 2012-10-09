@@ -127,6 +127,10 @@ a, a:link, a:visited {
 	color: #4A9DC6;
 }
 
+a:hover{
+	color: #495EC6;
+}
+
 .noBorder{
 	border: 0px;
 }

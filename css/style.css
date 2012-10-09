@@ -12,7 +12,7 @@ a, a:link, a:visited {
 
 a:hover {
 	color: #00FFFF;
-	text-decoration:none;
+	text-decoration: underline;
 }
 
 img { border: none; }
