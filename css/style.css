@@ -6,8 +6,8 @@ body {
 	background-color: #121213;
 }
 
-a, a:link, a:visited {
-	color:#c0c0c2;
+a:link, a:visited {
+	color:#C0C0C2;
 }
 
 a:hover {
@@ -243,12 +243,12 @@ ul {
 	list-style: none;
 }
 
-.footer_menu li a {
-	color: #d8d3bd;
+.footer_menu li a:link, li a:visited {
+	color: #D8D3BD;
 }
 
 .footer_menu li a:hover {
-	color: #fff;
+	color: #FFFFFF;
 }
 
 #footer img{
