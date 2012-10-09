@@ -11,7 +11,7 @@ a, a:link, a:visited {
 }
 
 a:hover {
-	color: #00FFFF;
+	color: #0588B9;
 	text-decoration: underline;
 }
 
@@ -77,7 +77,12 @@ ul {
 	outline: none;
 }
 
-#menu li a:hover, #menu li .current{
+#menu li .current{
+	color: #fff;
+	background: url(../images/menu_current.png) no-repeat;
+}
+
+#menu li a:hover{
 	color: #fff;
 	background: url(../images/menu_hover.png) no-repeat;
 }
@@ -92,7 +97,7 @@ ul {
 
 #menu ul li.icons a:hover{
 	color: #fff;
-	background: url(../images/menu_hover_icons.png) no-repeat;
+	background: url(../images/menu_icons_hover.png) no-repeat;
 }
 /* End of Social Media Icons */
 /* end of menu */
@@ -263,7 +268,12 @@ ul {
 	color: #6e6965;
 }
 
-#copyright a {
+#copyright a, a:visited {
 	color: #6e6965;
 }
+
+#copyright a:hover {
+	color: #383634;
+}
+
 /* end of copyright */
