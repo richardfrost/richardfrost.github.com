@@ -8,6 +8,7 @@ body {
 
 a:link, a:visited {
 	color:#C0C0C2;
+	text-decoration: underline;	
 }
 
 a:hover {
