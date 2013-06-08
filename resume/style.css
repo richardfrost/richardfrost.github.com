@@ -131,6 +131,16 @@ a:hover{
 	color: #495EC6;
 }
 
+a.hiddenHyperlink,  a.hiddenHyperlink:link, a.hiddenHyperlink:visited {
+	text-decoration: none;
+	color: #3B3B3B;
+}
+
+a.hiddenHyperlink:hover {
+	text-decoration: underline;
+	color: #4A9DC6;
+}
+
 .noBorder{
 	border: 0px;
 }
