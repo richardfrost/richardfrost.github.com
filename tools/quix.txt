@@ -1,0 +1,67 @@
+@merlins
+cal	javascript:var%20s;if(window.getSelection){s=window.getSelection();}else{s=document.selection.createRange().text;}var%20t=prompt('Please%20enter%20a%20description%20for%20the%20event',s);if(t){void(window.open(encodeURI('http://www.google.com/calendar/event?ctext='+t+'&action=TEMPLATE&pprop=HowCreated%3AQUICKADD'),'gcal'));}else{void(s);} Add event to Google Calendar
+down	http://downforeveryoneorjustme.com/%d Is this site downforeveryoneorjustme?
+gsub	javascript:var%20b=document.body;if(b){void(z=document.createElement('script'));void(z.src='http://www.google.com/reader/ui/subscribe-bookmarklet.js');void(b.appendChild(z));}else{location='http://www.google.com/reader/view/feed/'+encodeURIComponent(location.href)} Subscribe in Google Reader
+mob	javascript:function%20iptxt(){var%20d=document;try{if(!d.body)throw(0);window.location='http://www.instapaper.com/text?u='+encodeURIComponent(d.location.href);}catch(e){alert('Please%20wait%20until%20the%20page%20has%20loaded.');}}iptxt();void(0)  Make page into purty Instapaper mobile style
+text	javascript:location.href='http://www.aaronsw.com/2002/html2text/?url='+document.location.href;  Transform this page into Markdown
+
+@--=phrostyrs own=--
+@Please visit my <a href="http://phrostytech.blogspot.com">Tech Blog</a> for more information & cool tips!
+blog	http://phrostytech.blogspot.com/ Please visit my <a href="http://phrostytech.blogspot.com">Tech Blog</a> for more information & cool tips!
+
+@*Documents/Media*
+cyt	javascript:void(location.href='http://quietube.com/v.php/'+location.href) Clean the youtube interface.
+docs	javascript:if('%s'==''){file=prompt("Provide%20URL%20of%20Document%20to%20view%20with%20Google%20Docs:");}else%20file='%s';if(file)window.location='http://docs.google.com/viewer?url='+file; View Online Documents (PDF, TIFF, PPT) with Google Docs. Example: "docs http://constitutioncenter.org/633876696043236250.pdf"
+groove	javascript:hideAdvertisingBar(); Hides the annoying advertising bar on <a href="http://listen.grooveshark.com">GrooveShark</a>
+mus	javascript:var%20terms='%s';if(terms==''){terms=prompt('Enter%20Artist%20or%20Title:')};if(terms){terms='site:mediafire.com%20'+terms;window.location='http://www.google.com/search?q='+terms;} Search for music for quick downloads. Example: "mus beethoven"
+pdf	javascript:if('%s'==''){terms='%r';}else{terms='%s';}window.location='http://pdfmyurl.com/?url='+terms; Create a PDF file of the current website, or a specified website. Example: "pdf http://www.google.com" NOTE: page must be publicly accessible.
+savepdf javascript:void(window.open('http://www.web2pdfconvert.com/convert.aspx?cURL='+escape(location.href)+'&title='+escape(document.title)+'&ref=browser'+'')) use the <a href='http://www.web2pdfconvert.com/'>web2pdfconvert</a> service to download pdf of webpage.
+pic	javascript:terms='%r';window.location='http://Aviary.com/'+terms; Takes a full screenshot of the current webpage. NOTE: page must be publicly accessible.
+pics	javascript:(function(){op=window.open('','P');od=op.document;bd='';j=0;for(i=0;i<document.images.length;i++){j++;bd+='.<img%20src%20=%20'+document.images[i].src+'>';}t=bd;od.writeln(t);od.close;})() Opens a new page comprised of all the images from current web page.
+read	javascript:function%20iprl5(){var%20d=document,z=d.createElement('scr'+'ipt'),b=d.body,l=d.location;try{if(!b)throw(0);d.title='(Saving...)'+d.title;z.setAttribute('src',l.protocol+'//www.instapaper.com/j/U8HPCkn9dUpm?u='+encodeURIComponent(l.href)+'&t='+(new Date().getTime()));b.appendChild(z);}catch(e){alert('Please%20wait%20until%20the%20page%20has%20loaded.');}}iprl5();void(0)  add to my Instapaper
+yt	javascript:(function(){url='http://deturl.com/download-video.js';document.body.appendChild(document.createElement('script')).src=url;})(); Download Videos from YouTube and similar streaming video sites.
+keepvid	javascript:(a=(b=document).createElement('script')).src='http://keepvid.com/js/bm.js',b.body.appendChild(a);void(0); Download Videos using KeepVid.com - Requires Java
+
+@*Searching/Web*
+archive javascript:(function(){if('%s'){terms='%s'}else{terms='%r';}location="http://web.archive.org/archive_request_ng?collection=web&url="+terms+"&Submit=Take+Me+Back%21";}()) Presents a page with links to old <a href="http://www.archive.org/">archived</a> versions of current, or specified, website. Example: "archive http://www.google.com"
+>bug	javascript:if('%s'==''||'%s'=='nw'){terms='%d';}else{terms='%s';}if('%s'=='nw'){window.open(encodeURI('http://www.bugmenot.com/view/'+terms));}else{window.location='http://bugmenot.com/view/'+terms;} Use <a href="http://www.bugmenot.com/">BugMeNot</a> to bypass registration on sites (use nw to display in a new window).
+bug	javascript:if('%s'==''){terms='%d';}else{terms='%s';}window.open(encodeURI('http://www.bugmenot.com/view/'+terms)); Use <a href="http://www.bugmenot.com/">BugMeNot</a> to bypass registration on sites (use nw to display in a new window).
+reatil	javascript:if('%s'==''){terms='%d';}else{terms='%s';}window.open(encodeURI('http://www.retailmenot.com/search.php?query='+terms)); Search <a href="http://www.retailmenot.com/">RetailMeNot</a> for coupon codes for a specific store/site, specified or current. Example: "cpn amazon.com"
+gcache	javascript:(function(){if('%s'){terms='%s'}else{terms='%r';}location="http://www.google.com/search?q=cache:"+terms;}()) View Google's cache of a website, either current or specified. Example: "gcache http://www.wikipedia.com"
+gb	javascript:(function(){var%20a=window,b=document,c=encodeURIComponent,d=a.open("http://www.google.com/bookmarks/mark?op=edit&output=popup&bkmk="+c(b.location)+"&title="+c(b.title),"bkmk_popup","left="+((a.screenX||a.screenLeft)+10)+",top="+((a.screenY||a.screenTop)+10)+",height=420px,width=550px,resizable=1,alwaysRaised=1");a.setTimeout(function(){d.focus()},300)})(); Bookmark current page with <a href='http://www.google.com/bookmarks'>Google Bookmarks</a>.
+gn	javascript:(function(){var%20w=window,d=document,g=w.open('about:blank','gnotesWin','location=0,menubar=0,scrollbars=0,status=0,toolbar=0,width=300,height=300,resizable,alwaysRaised=1');var%20s=d.createElement('script');s.setAttribute('src','http://www.google.com/notebook/bookmarkletPoster?zx='+(new%20Date()).valueOf());d.body.appendChild(s);w.setTimeout(function(){w.blur();g.focus();},100)}).call({}); Add current webpage to your <a href='http://www.google.com/notebook'>Google Notebook</a>.
+gsite	javascript:var%20terms='%s';if(terms==''){terms=prompt('Enter%20search%20terms%20for%20current%20site:')};if(terms){window.location='http://www.google.com/search?num=100&q=site:'+'%d'+'%20'+terms;} Search current site with <a href="http://www.google.com">Google Search</a>. Example: "siteg books" lists googles results for "books".
+sg	javascript:var%20terms='%s';if(terms==''){terms=prompt('Enter%20search%20terms%20:')};if(terms){window.location='https://www.google.com/search?q='+terms;} Search the using <a href="https://www.google.com">Google's Secure Search.</a>
+
+@*Miscellaneous*
+mask	javascript:if('%s'==''){terms='%d';}else{terms='%s';}window.location='http://variablysfw.appspot.com/'+terms; Covers a webpage with an adjustable black sheet to make sure it is safe for viewing.
+mins	javascript:window.location='http://'+'%s'+'.minutes.at/'+'%r'; Enter number of minutes to limit webpage viewing. Example: "mins 10" to limit viewing of current page to 10 minutes.
+marklet javascript:(function(){if(document.getElementById('bmletMain')){bmletRefresh();return;};var%20d=document;s=d.createElement('script');s.setAttribute('src','http://www.marklets.com/bookmarklets/Marklet/marklet.js');s.setAttribute('type','text/javascript');d.body.appendChild(s);})(); bookmarklet suite from marklets.com
+aster	javascript:var%20s=document.createElement('script');s.type='text/javascript';document.body.appendChild(s);s.src='http://dl.dropbox.com/u/3309814/Web/JavaScript/asteroids.min.js';void(0); Turn website into Asteroids game!
+
+@*Tools/Advanced*
+chars	javascript:(function(){var%20D=document,i,f,j,e;for(i=0;f=D.forms[i];++i)for(j=0;e=f[j];++j)if(e.type=="text"||e.type=="password"||e.tagName.toLowerCase()=="textarea")S(e);function%20S(e){if(!e.N){var%20x=D.createElement("span"),s=x.style;s.color="green";s.background="white";s.font="bold%2010pt%20sans-serif";s.verticalAlign="top";e.parentNode.insertBefore(x,e.nextSibling);function%20u(){x.innerHTML=e.value.length;}u();e.onchange=u;e.onkeyup=u;e.oninput=u;e.N=x;}else{e.parentNode.removeChild(e.N);e.N=0;}}})() Count the number of characters contained in the textboxes on current page.
+dual	javascript:page1=location.href;page1=prompt('Enter%201st%20Webpage:',page1);if(page1){page2=prompt('Enter%202nd%20Webpage:',page1);}if(page1&&page2){dual='<frameset%20cols=\'*,*\'>\n<frame%20src=\''+page1+'\'/>';dual+='<frame%20src=\''+page2+'\'/>\n';dual+='</frameset>';with(document){write(dual);void(close())}}else{void(null)} Open 2 pages side by side.
+rename	javascript:(function(){var%20t=document.title;if('%s'==''){n=prompt('Enter%20a%20new%20title%20for%20this%20page',t)}else%20n='%s';if(n!=''&&n!=t)document.title=n;})() Rename Current Page's Title.
+toggle	javascript:(function(){function%20checkFrames(w)%20{try%20{var%20inputs%20=%20w.document.getElementsByTagName('input');for%20(var%20i=0;%20i%20<%20inputs.length;%20i++)%20{if%20(inputs[i].type%20&&%20inputs[i].type%20==%20'checkbox'){inputs[i].checked%20=%20!inputs[i].checked;}}}%20catch%20(e){}if(w.frames%20&&%20w.frames.length>0){for(var%20i=0;i<w%20.frames.length;i++){var%20fr=w.frames[i];checkFrames(fr);}}}checkFrames(window);})() Toggle all check boxes on current page.
+>Advanced
+nocss	javascript:for(i=0;i<document.styleSheets.length;i++){void(document.styleSheets.item(i).disabled=true);}el=document.getElementsByTagName('*');for(i=0;i<el.length;i++){void(el[i].style.cssText='');} Remove stylesheet formatting on current page.
+noi	javascript:(function(){function%20toArray%20(c){var%20a,%20k;a=new%20Array;for%20(k=0;%20k%20<%20c.length;%20++k)a[k]=c[k];return%20a;}var%20images,%20img,%20altText;images=toArray(document.images);for%20(var%20i=0;%20i%20<%20images.length;%20++i){img=images[i];altText=document.createTextNode(img.alt);img.parentNode.replaceChild(altText,%20img)}})(); Remove all images from current page.
+plinks javascript:(function(){s='';for%20(i=0;i<document.images.length;i++){s+='<a%20href="'+document.images[i].src+'">'+document.images[i].src+'</a><br>'};if(s!=''){fg=window.open();fg.document.write(s);document.close();}else{alert('No%20images!');}})() Opens a new page with urls for every image on current page.
+slinks javascript:(function(){terms=prompt('terms:');s='';for%20(i=0;i<document.links.length;++i){if(document.links[i].href.indexOf(terms)!=-1||document.links[i].innerHTML.indexOf(terms)!=-1){s+='<a%20href="'+document.links[i].href+'">'+document.links[i].href+'</a><br>'}};if(s!=''){fg=window.open();fg.document.write(s);document.close();}else{alert('No%20results%20found.');}})() Opens a new page with urls contained on current page. Example: "slinks pdf" will list only links containing "pdf".
+
+>Testing:
+>Ideas:
+>Biggest image on page, based on pics
+
+>Search Links
+>javascript:(function(){var x,n,nD,z,i; function htmlEscape(s){s=s.replace(/&/g,'&');s=s.replace(/>/g,'>');s=s.replace(/</g,'<');return s;} function attrQuoteEscape(s){s=s.replace(/&/g,'&'); s=s.replace(/"/g, '"');return s;} x=prompt("show links with this word/phrase in link text or target url (leave blank to list all links):", ""); n=0; if(x!=null) { x=x.toLowerCase(); nD = window.open().document; nD.writeln('<html><head><title>Links containing "'+htmlEscape(x)+'"</title><base target="_blank"></head><body>'); nD.writeln('Links on <a href="'+attrQuoteEscape(location.href)+'">'+htmlEscape(location.href)+'</a><br> with link text or target url containing "' + htmlEscape(x) + '"<br><hr>'); z = document.links; for (i = 0; i < z.length; ++i) { if ((z[i].innerHTML && z[i].innerHTML.toLowerCase().indexOf(x) != -1) || z[i].href.toLowerCase().indexOf(x) != -1 ) { nD.writeln(++n + '. <a href="' + attrQuoteEscape(z[i].href) + '">' + (z[i].innerHTML || htmlEscape(z[i].href)) + '</a><br>'); } } nD.writeln('<hr></body></html>'); nD.close(); } })();
+
+>Open All Links
+>javascript:(function(){var n_to_open,dl,dll,i; function linkIsSafe(u) { if (u.substr(0,7)=='https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=') return false; if (u.substr(0,11)=='javascript:') return false; return true; } n_to_open = 0; dl = document.links; dll = dl.length; for(i = 0; i < dll; ++i) { if (linkIsSafe(dl[i].href)) ++n_to_open; } if (!n_to_open) alert ('no links'); else { if (confirm('Open ' + n_to_open + ' links in new windows&')) for (i = 0; i < dll; ++i) if (linkIsSafe(dl[i].href)) window.open(dl[i].href); } })();
+
+>Images in a new page
+>javascript:(function(){s='';for (i=0;i<document.images.length;i++){s+='<img src="'+document.images[i].src+'"><br>'};if(s!=''){fg=window.open();fg.document.write('<center>'+s+'</center>');document.close();}else{alert('No images!');}})()
+
+>Image as links in a new page
+>javascript:(function(){s='';for (i=0;i<document.images.length;i++){s+='<a href="'+document.images[i].src+'">'+document.images[i].src+'</a><br>'};if(s!=''){fg=window.open();fg.document.write(s);document.close();}else{alert('No images!');}})()
