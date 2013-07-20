@@ -19,7 +19,7 @@ a:hover {
 img { border: none; }
 
 ul {
-	list-style-image:  url(../images/list_icon.png);
+	/* list-style-image:  url(../images/list_icon.png); */
 }
 
 h1, h2, h3, h4, h5 { font-weight: normal; }
