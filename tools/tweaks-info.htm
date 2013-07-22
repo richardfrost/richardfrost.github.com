@@ -1,0 +1,558 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<title>Registry Tweaks Info</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Calibri Light";
+	panose-1:2 15 3 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Calibri Light","sans-serif";
+	color:#2E74B5;
+	font-weight:normal;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-top:2.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:13.0pt;
+	font-family:"Calibri Light","sans-serif";
+	color:#2E74B5;
+	font-weight:normal;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{mso-style-link:"Title Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:28.0pt;
+	font-family:"Calibri Light","sans-serif";
+	letter-spacing:-.5pt;}
+p.MsoTitleCxSpFirst, li.MsoTitleCxSpFirst, div.MsoTitleCxSpFirst
+	{mso-style-link:"Title Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:28.0pt;
+	font-family:"Calibri Light","sans-serif";
+	letter-spacing:-.5pt;}
+p.MsoTitleCxSpMiddle, li.MsoTitleCxSpMiddle, div.MsoTitleCxSpMiddle
+	{mso-style-link:"Title Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:28.0pt;
+	font-family:"Calibri Light","sans-serif";
+	letter-spacing:-.5pt;}
+p.MsoTitleCxSpLast, li.MsoTitleCxSpLast, div.MsoTitleCxSpLast
+	{mso-style-link:"Title Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:28.0pt;
+	font-family:"Calibri Light","sans-serif";
+	letter-spacing:-.5pt;}
+p.MsoSubtitle, li.MsoSubtitle, div.MsoSubtitle
+	{mso-style-link:"Subtitle Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	color:#5A5A5A;
+	letter-spacing:.75pt;}
+a:link, span.MsoHyperlink
+	{color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:#954F72;
+	text-decoration:underline;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:.5in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:.5in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoQuote, li.MsoQuote, div.MsoQuote
+	{mso-style-link:"Quote Char";
+	margin-top:10.0pt;
+	margin-right:.6in;
+	margin-bottom:8.0pt;
+	margin-left:.6in;
+	text-align:center;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	color:#404040;
+	font-style:italic;}
+span.TitleChar
+	{mso-style-name:"Title Char";
+	mso-style-link:Title;
+	font-family:"Calibri Light","sans-serif";
+	letter-spacing:-.5pt;}
+span.SubtitleChar
+	{mso-style-name:"Subtitle Char";
+	mso-style-link:Subtitle;
+	font-family:"Times New Roman","serif";
+	color:#5A5A5A;
+	letter-spacing:.75pt;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Calibri Light","sans-serif";
+	color:#2E74B5;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Calibri Light","sans-serif";
+	color:#2E74B5;}
+span.QuoteChar
+	{mso-style-name:"Quote Char";
+	mso-style-link:Quote;
+	color:#404040;
+	font-style:italic;}
+.MsoChpDefault
+	{font-family:"Calibri","sans-serif";}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US link="#0563C1" vlink="#954F72">
+
+<div class=WordSection1>
+
+<p class=MsoTitle>Registry Tweaks</p>
+
+<p class=MsoSubtitle><a href="http://richardfrost.info">Richard Frost</a> © Copyright
+2013</p>
+
+<p class=MsoNormal><i>Warning: These files will make changes to your system’s
+registry. While I have tested these modifications extensively, they come with
+no warranty. Please be careful.</i></p>
+
+<h1>Applying Registry Files</h1>
+
+<p class=MsoNormal>To add one of these registry files to your system follow
+these steps:</p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-.25in'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Right-click
+the link for the desired registry tweak (see below for options) and choose save
+link.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Once
+the file has been downloaded, double-click on the .reg file and answer “Yes” or
+“Allow” to the prompts.</p>
+
+<p class=MsoListParagraphCxSpLast style='margin-left:1.0in;text-indent:-.25in'>a.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>If
+the file will not run you may need to “Unblock” it by right-clicking the file
+and choosing properties.</p>
+
+<h1>Standard (Recommended)</h1>
+
+<h2 style='margin-left:.5in'>Context Menu</h2>
+
+<p class=MsoListParagraphCxSpFirst style='margin-left:.75in;text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Copy TXT file contents to clipboard.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:.75in;text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Open with Notepad for all file types.</p>
+
+<p class=MsoListParagraphCxSpLast style='margin-left:.75in;text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Run VBS files as Administrator.</p>
+
+<h2 style='margin-left:.5in'>Expanded Context Menu (Shift + Right-click)</h2>
+
+<p class=MsoListParagraphCxSpFirst style='margin-left:.75in;text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Open Command Window Here as Administrator.</p>
+
+<p class=MsoListParagraphCxSpLast style='margin-left:.75in;text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Take Ownership of files and folders (Advanced).</p>
+
+<h2 style='margin-left:.5in'>Other Settings</h2>
+
+<p class=MsoListParagraphCxSpFirst style='margin-left:.75in;text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Add several useful commands into the “Run” history (see “Run”
+section below).</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:.75in;text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Disable Aero Shake.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:.75in;text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Disable “Internet Open With” dialog for unknown file types.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:.75in;text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Disable “Shortcut to” from being prepended to shortcuts.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:.75in;text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Disable Windows Update auto-reboot.</p>
+
+<p class=MsoListParagraphCxSpLast style='margin-left:.75in;text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Prevent Windows Update from hijacking the shutdown button.</p>
+
+<h1>Expanded</h1>
+
+<p class=MsoNormal>Same features as standard, but places entries from the
+Expanded Context Menu to the standard Menu.</p>
+
+<h1>Undo</h1>
+
+<p class=MsoNormal>Removes entries added by tweaks-standard.reg and
+tweaks-expanded.reg and restores defaults.<br clear=all style='page-break-before:
+always'>
+</p>
+
+<h1>Run (Win + R)</h1>
+
+<p class=MsoNormal>To easily access your run history, open up the Run dialog
+box (Win + R) and use the dropdown or start typing the desired command.</p>
+
+<p class=MsoNormal>The following table describes the entries that will be added
+into your run history:</p>
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0 width=438
+ style='width:328.25pt;border-collapse:collapse;border:none'>
+ <tr style='height:15.0pt'>
+  <td width=123 nowrap valign=top style='width:92.0pt;border:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><b><span style='color:black'>Command</span></b></p>
+  </td>
+  <td width=315 nowrap valign=top style='width:236.25pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><b><span style='color:black'>Description</span></b></p>
+  </td>
+ </tr>
+ <tr style='height:15.0pt'>
+  <td width=123 nowrap valign=top style='width:92.0pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='color:black'>AppWiz.cpl</span></p>
+  </td>
+  <td width=315 nowrap valign=top style='width:236.25pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='color:black'>Add/Remove Programs</span></p>
+  </td>
+ </tr>
+ <tr style='height:15.0pt'>
+  <td width=123 nowrap valign=top style='width:92.0pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='color:black'>CMD</span></p>
+  </td>
+  <td width=315 nowrap valign=top style='width:236.25pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='color:black'>Command Prompt</span></p>
+  </td>
+ </tr>
+ <tr style='height:15.0pt'>
+  <td width=123 nowrap valign=top style='width:92.0pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='color:black'>CompMgmt.msc</span></p>
+  </td>
+  <td width=315 nowrap valign=top style='width:236.25pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='color:black'>Computer Management</span></p>
+  </td>
+ </tr>
+ <tr style='height:15.75pt'>
+  <td width=123 nowrap valign=top style='width:92.0pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:15.75pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='color:black'>Control</span></p>
+  </td>
+  <td width=315 nowrap valign=top style='width:236.25pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.75pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='color:black'>Control Panel</span></p>
+  </td>
+ </tr>
+ <tr style='height:15.0pt'>
+  <td width=123 nowrap valign=top style='width:92.0pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='color:black'>DevMgmt.msc</span></p>
+  </td>
+  <td width=315 nowrap valign=top style='width:236.25pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='color:black'>Device Manager</span></p>
+  </td>
+ </tr>
+ <tr style='height:15.0pt'>
+  <td width=123 nowrap valign=top style='width:92.0pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='color:black'>DiskMgmt.msc</span></p>
+  </td>
+  <td width=315 nowrap valign=top style='width:236.25pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='color:black'>Disk Management</span></p>
+  </td>
+ </tr>
+ <tr style='height:15.0pt'>
+  <td width=123 nowrap valign=top style='width:92.0pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='color:black'>EventVwr.msc</span></p>
+  </td>
+  <td width=315 nowrap valign=top style='width:236.25pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='color:black'>Event Viewer</span></p>
+  </td>
+ </tr>
+ <tr style='height:15.0pt'>
+  <td width=123 nowrap valign=top style='width:92.0pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='color:black'>GPMC.msc</span></p>
+  </td>
+  <td width=315 nowrap valign=top style='width:236.25pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='color:black'>Group Policy Management Console</span></p>
+  </td>
+ </tr>
+ <tr style='height:15.0pt'>
+  <td width=123 nowrap valign=top style='width:92.0pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='color:black'>MSTSC</span></p>
+  </td>
+  <td width=315 nowrap valign=top style='width:236.25pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='color:black'>Microsoft Terminal Services Client</span></p>
+  </td>
+ </tr>
+ <tr style='height:15.0pt'>
+  <td width=123 nowrap valign=top style='width:92.0pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='color:black'>NCPA.cpl</span></p>
+  </td>
+  <td width=315 nowrap valign=top style='width:236.25pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='color:black'>Network Adapters</span></p>
+  </td>
+ </tr>
+ <tr style='height:15.0pt'>
+  <td width=123 nowrap valign=top style='width:92.0pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='color:black'>PowerShell</span></p>
+  </td>
+  <td width=315 nowrap valign=top style='width:236.25pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='color:black'>PowerShell</span></p>
+  </td>
+ </tr>
+ <tr style='height:15.0pt'>
+  <td width=123 nowrap valign=top style='width:92.0pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='color:black'>RegEdit</span></p>
+  </td>
+  <td width=315 nowrap valign=top style='width:236.25pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='color:black'>Registry Editor</span></p>
+  </td>
+ </tr>
+ <tr style='height:15.0pt'>
+  <td width=123 nowrap valign=top style='width:92.0pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='color:black'>SecPol.msc</span></p>
+  </td>
+  <td width=315 nowrap valign=top style='width:236.25pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='color:black'>Local Security Policy</span></p>
+  </td>
+ </tr>
+ <tr style='height:15.0pt'>
+  <td width=123 nowrap valign=top style='width:92.0pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='color:black'>Services.msc</span></p>
+  </td>
+  <td width=315 nowrap valign=top style='width:236.25pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='color:black'>Services</span></p>
+  </td>
+ </tr>
+ <tr style='height:15.0pt'>
+  <td width=123 nowrap valign=top style='width:92.0pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='color:black'>SysDM.cpl</span></p>
+  </td>
+  <td width=315 nowrap valign=top style='width:236.25pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='color:black'>System Properties</span></p>
+  </td>
+ </tr>
+ <tr style='height:15.0pt'>
+  <td width=123 nowrap valign=top style='width:92.0pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='color:black'>TaskSchd.msc</span></p>
+  </td>
+  <td width=315 nowrap valign=top style='width:236.25pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='color:black'>Task Scheduler</span></p>
+  </td>
+ </tr>
+ <tr style='height:15.0pt'>
+  <td width=123 nowrap valign=top style='width:92.0pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='color:black'>WF.msc</span></p>
+  </td>
+  <td width=315 nowrap valign=top style='width:236.25pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='color:black'>Windows Firewall</span></p>
+  </td>
+ </tr>
+ <tr style='height:15.0pt'>
+  <td width=123 nowrap valign=top style='width:92.0pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='color:black'>NSLookup</span></p>
+  </td>
+  <td width=315 nowrap valign=top style='width:236.25pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='color:black'>NSLookup Command</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Note: This will overwrite your current Run history.</p>
+
+</div>
+
+</body>
+
+</html>

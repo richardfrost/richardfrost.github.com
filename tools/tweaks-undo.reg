@@ -1,0 +1,89 @@
+Windows Registry Editor Version 5.00
+
+;;;; Default-Aero_Shake.reg - How-To Geek
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\Windows\Explorer]
+"NoWindowMinimizingShortcuts"=-
+
+
+;;;; Default-Internet_Open_With.reg - howtogeek.com
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"NoInternetOpenWith"=-
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"NoInternetOpenWith"=-
+
+
+;;;; Default-Shortcut_Text.reg
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer]
+"link"=hex:1e,00,00,00
+
+
+;;;; Default-Updates_Auto_Reboot.reg
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU]
+"NoAutoRebootWithLoggedOnUsers"=-
+
+
+;;;; Default-Updates_Hijacking_Shutdown.reg
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\Windows\WindowsUpdate\AU]
+"NoAUAsDefaultShutdownOption"=-
+
+
+;;;; Remove-Copy_TXT_To_Clipboard.reg - howtogeek.com
+[-HKEY_CLASSES_ROOT\txtfile\shell\copytoclip]
+
+
+;;;; Remove-Open_Command_Window_Here.reg - Shawn Brink - http://www.sevenforums.com
+[HKEY_CLASSES_ROOT\Directory\Background\shell\cmd]
+@="@shell32.dll,-8506"
+"Extended"=""
+"NoWorkingDirectory"=""
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\cmd\command]
+@="cmd.exe /s /k pushd \"%V\""
+
+
+
+[HKEY_CLASSES_ROOT\Directory\shell\cmd]
+@="@shell32.dll,-8506"
+"Extended"=""
+"NoWorkingDirectory"=""
+
+[HKEY_CLASSES_ROOT\Directory\shell\cmd\command]
+@="cmd.exe /s /k pushd \"%V\""
+
+
+
+[HKEY_CLASSES_ROOT\Drive\shell\cmd]
+@="@shell32.dll,-8506"
+"Extended"=""
+"NoWorkingDirectory"=""
+
+[HKEY_CLASSES_ROOT\Drive\shell\cmd\command]
+@="cmd.exe /s /k pushd \"%V\""
+
+
+;;;; Remove-Open_Command_Window_Here_as_Administrator.reg - Shawn Brink - http://www.sevenforums.com
+[-HKEY_CLASSES_ROOT\Directory\shell\runas]
+
+[-HKEY_CLASSES_ROOT\Directory\Background\shell\runas]
+
+[-HKEY_CLASSES_ROOT\Drive\shell\runas]
+
+
+;;;; Remove-Open_With_Notepad.reg
+[-HKEY_CLASSES_ROOT\*\shell\Open with Notepad]
+
+
+;;;; Remove-Take_Ownership.reg
+[-HKEY_CLASSES_ROOT\*\shell\runas]
+
+[-HKEY_CLASSES_ROOT\Directory\shell\runas]
+
+
+;;;; Remove-VBS_as_Administrator.reg
+[-HKEY_CLASSES_ROOT\VBSFile\Shell\runas]
+
+
+;;;; Run-Clear.reg
+[-HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RunMRU]
+

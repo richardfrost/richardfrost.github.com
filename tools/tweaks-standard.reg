@@ -1,0 +1,138 @@
+Windows Registry Editor Version 5.00
+
+;;;; Add-Copy_TXT_To_Clipboard-Expanded.reg - howtogeek.com
+[HKEY_CLASSES_ROOT\txtfile\shell\copytoclip]
+@="Copy to Clipboard"
+
+[HKEY_CLASSES_ROOT\txtfile\shell\copytoclip\command]
+@="cmd /c clip < \"%1\""
+
+
+;;;; Add-Open_Command_Window_Here_as_Administrator-Expanded.reg - Shawn Brink - http://www.sevenforums.com
+[-HKEY_CLASSES_ROOT\Directory\shell\runas]
+
+[HKEY_CLASSES_ROOT\Directory\shell\runas]
+@="Open command window here"
+"Extended"=""
+"HasLUAShield"=""
+
+[HKEY_CLASSES_ROOT\Directory\shell\runas\command]
+@="cmd.exe /s /k pushd \"%V\""
+
+[-HKEY_CLASSES_ROOT\Directory\Background\shell\runas]
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\runas]
+@="Open command window here"
+"Extended"=""
+"HasLUAShield"=""
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\runas\command]
+@="cmd.exe /s /k pushd \"%V\""
+
+[-HKEY_CLASSES_ROOT\Drive\shell\runas]
+
+[HKEY_CLASSES_ROOT\Drive\shell\runas]
+@="Open command window here"
+"Extended"=""
+"HasLUAShield"=""
+
+[HKEY_CLASSES_ROOT\Drive\shell\runas\command]
+@="cmd.exe /s /k pushd \"%V\""
+
+
+;;;; Add-Open_With_Notepad-Icon.reg
+[HKEY_CLASSES_ROOT\*\shell\Open with Notepad]
+"Icon"="notepad.exe,0"
+
+[HKEY_CLASSES_ROOT\*\shell\Open with Notepad\command]
+@="notepad.exe %1"
+
+
+;;;; Add-Take_Ownership.reg
+[HKEY_CLASSES_ROOT\*\shell\runas]
+@="Take Ownership"
+"NoWorkingDirectory"=""
+"Extended"=""
+"HasLUAShield"=""
+
+[HKEY_CLASSES_ROOT\*\shell\runas\command]
+@="cmd.exe /c takeown /f \"%1\" && icacls \"%1\" /grant administrators:F"
+"IsolatedCommand"="cmd.exe /c takeown /f \"%1\" && icacls \"%1\" /grant administrators:F"
+
+[HKEY_CLASSES_ROOT\Directory\shell\runas]
+@="Take Ownership"
+"NoWorkingDirectory"=""
+"Extended"=""
+"HasLUAShield"=""
+
+[HKEY_CLASSES_ROOT\Directory\shell\runas\command]
+@="cmd.exe /c takeown /f \"%1\" /r /d y && icacls \"%1\" /grant administrators:F /t"
+"IsolatedCommand"="cmd.exe /c takeown /f \"%1\" /r /d y && icacls \"%1\" /grant administrators:F /t"
+
+
+;;;; Add-VBS_as_Administrator.reg
+[HKEY_CLASSES_ROOT\VBSFile\Shell\runas]
+"HasLUAShield"=""
+
+[HKEY_CLASSES_ROOT\VBSFile\Shell\runas\Command]
+@=hex(2):22,00,25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,6f,00,6f,00,74,\
+  00,25,00,5c,00,53,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,57,00,\
+  53,00,63,00,72,00,69,00,70,00,74,00,2e,00,65,00,78,00,65,00,22,00,20,00,22,\
+  00,25,00,31,00,22,00,20,00,25,00,2a,00,00,00
+
+
+;;;; Disable-Aero_Shake.reg - How-To Geek
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\Windows\Explorer]
+"NoWindowMinimizingShortcuts"=dword:00000001
+
+
+;;;; Disable-Internet_Open_With.reg - howtogeek.com
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"NoInternetOpenWith"=dword:00000001
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"NoInternetOpenWith"=dword:00000001
+
+
+;;;; Disable-Shortcut_Text.reg
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer]
+"link"=hex:00,00,00,00
+
+
+;;;; Disable-Updates_Auto_Reboot.reg
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU]
+"NoAutoRebootWithLoggedOnUsers"=dword:00000001
+
+
+;;;; Disable-Updates_Hijacking_Shutdown.reg
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\Windows\WindowsUpdate\AU]
+"NoAUAsDefaultShutdownOption"=dword:00000001
+
+
+;;;; Run.reg
+; * History marked with MRUList ("abc" = "a" last typed in history)
+; * Adds new entries on the end (after last used letter)
+; * No new entries after z (doesn't record history any more)
+[-HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RunMRU]
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RunMRU]
+"MRUList"="abcdefghijklmnopqr"
+"a"="AppWiz.cpl\\1"
+"b"="CMD\\1"
+"c"="CompMgmt.msc\\1"
+"d"="Control\\1"
+"e"="DevMgmt.msc\\1"
+"f"="DiskMgmt.msc\\1"
+"g"="EventVwr.msc\\1"
+"h"="GPMC.msc\\1"
+"i"="MSTSC\\1"
+"j"="NCPA.cpl\\1"
+"k"="PowerShell\\1"
+"l"="RegEdit\\1"
+"m"="SecPol.msc\\1"
+"n"="Services.msc\\1"
+"o"="SysDM.cpl\\1"
+"p"="TaskSchd.msc\\1"
+"q"="WF.msc\\1"
+"r"="NSLookup\\1"
+
