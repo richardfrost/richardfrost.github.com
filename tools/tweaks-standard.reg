@@ -40,6 +40,39 @@ Windows Registry Editor Version 5.00
 @="cmd.exe /s /k pushd \"%V\""
 
 
+;;;; Add-Open_Command_Window_Here-Icon-Expanded.reg - Shawn Brink - http://www.sevenforums.com
+[HKEY_CLASSES_ROOT\Directory\Background\shell\cmd]
+@="@shell32.dll,-8506"
+"Extended"=
+"NoWorkingDirectory"=""
+"Icon"="cmd.exe,0"
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\cmd\command]
+@="cmd.exe /s /k pushd \"%V\""
+
+
+
+[HKEY_CLASSES_ROOT\Directory\shell\cmd]
+@="@shell32.dll,-8506"
+"Extended"=
+"NoWorkingDirectory"=""
+"Icon"="cmd.exe,0"
+
+[HKEY_CLASSES_ROOT\Directory\shell\cmd\command]
+@="cmd.exe /s /k pushd \"%V\""
+
+
+
+[HKEY_CLASSES_ROOT\Drive\shell\cmd]
+@="@shell32.dll,-8506"
+"Extended"=
+"NoWorkingDirectory"=""
+"Icon"="cmd.exe,0"
+
+[HKEY_CLASSES_ROOT\Drive\shell\cmd\command]
+@="cmd.exe /s /k pushd \"%V\""
+
+
 ;;;; Add-Open_With_Notepad-Icon.reg
 [HKEY_CLASSES_ROOT\*\shell\Open with Notepad]
 "Icon"="notepad.exe,0"

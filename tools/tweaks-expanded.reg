@@ -8,11 +8,12 @@ Windows Registry Editor Version 5.00
 @="cmd /c clip < \"%1\""
 
 
-;;;; Add-Open_Command_Window_Here.reg - Shawn Brink - http://www.sevenforums.com
+;;;; Add-Open_Command_Window_Here-Icon.reg - Shawn Brink - http://www.sevenforums.com
 [HKEY_CLASSES_ROOT\Directory\Background\shell\cmd]
 @="@shell32.dll,-8506"
 "Extended"=-
 "NoWorkingDirectory"=""
+"Icon"="cmd.exe,0"
 
 [HKEY_CLASSES_ROOT\Directory\Background\shell\cmd\command]
 @="cmd.exe /s /k pushd \"%V\""
@@ -23,6 +24,7 @@ Windows Registry Editor Version 5.00
 @="@shell32.dll,-8506"
 "Extended"=-
 "NoWorkingDirectory"=""
+"Icon"="cmd.exe,0"
 
 [HKEY_CLASSES_ROOT\Directory\shell\cmd\command]
 @="cmd.exe /s /k pushd \"%V\""
@@ -33,6 +35,7 @@ Windows Registry Editor Version 5.00
 @="@shell32.dll,-8506"
 "Extended"=-
 "NoWorkingDirectory"=""
+"Icon"="cmd.exe,0"
 
 [HKEY_CLASSES_ROOT\Drive\shell\cmd\command]
 @="cmd.exe /s /k pushd \"%V\""
@@ -72,6 +75,7 @@ Windows Registry Editor Version 5.00
 
 ;;;; Add-Open_With_Notepad.reg
 [HKEY_CLASSES_ROOT\*\shell\Open with Notepad]
+"Icon"="notepad.exe,0"
 
 [HKEY_CLASSES_ROOT\*\shell\Open with Notepad\command]
 @="notepad.exe %1"
