@@ -8,6 +8,86 @@ Windows Registry Editor Version 5.00
 @="cmd /c clip < \"%1\""
 
 
+;;;; Add-Power_Desktop_Sub_Menu.reg
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Power Menu]
+"MUIVerb"="Power Menu"
+"SubCommands"="lock;logoff;switch;sleep;hibernate;restart;safemode;shutdown;hybridshutdown"
+"Icon"="shell32.dll,215"
+"Position"="bottom"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\lock]
+@="Lock"
+"icon"="shell32.dll,47"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\lock\command]
+@="Rundll32 User32.dll,LockWorkStation"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\logoff]
+@="Log Off"
+"icon"="shell32.dll,211"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\logoff\command]
+@="Shutdown -l"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\switch]
+@="Switch User"
+"icon"="shell32.dll,170"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\switch\command]
+@="tsdiscon.exe"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\sleep]
+@="Sleep"
+"icon"="shell32.dll,25"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\sleep\command]
+@="rundll32.exe powrprof.dll,SetSuspendState Sleep"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\hibernate]
+@="Hibernate"
+"icon"="shell32.dll,217"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\hibernate\command]
+@="Shutdown -h"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\restart]
+@="Restart"
+"icon"="shell32.dll,238"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\restart\command]
+@="Shutdown -r -f -t 00"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\safemode]
+@="Restart with Boot Options Menu"
+"icon"="shell32.dll,207"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\safemode\command]
+@="Shutdown -r -o -f -t 00"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\shutdown]
+@="Shut Down"
+"icon"="shell32.dll,215"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\shutdown\command]
+@="Shutdown -s -f -t 00"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\hybridshutdown]
+@="Shut Down (Hybrid)"
+"icon"="shell32.dll,112"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\hybridshutdown\command]
+@="Shutdown -s -f -t 00 -hybrid"
+
+
+;;;; Add-Desktop_Run.reg - Richard Frost
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Run]
+"icon"="shell32.dll,24"
+"Position"="Top"
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Run\command]
+@="explorer.exe shell:::{2559a1f3-21d7-11d4-bdaf-00c04f60b9f0}"
+
+
 ;;;; Add-Open_Command_Window_Here_as_Administrator-Expanded.reg - Shawn Brink - http://www.sevenforums.com
 [-HKEY_CLASSES_ROOT\Directory\shell\runas]
 
@@ -79,68 +159,6 @@ Windows Registry Editor Version 5.00
 
 [HKEY_CLASSES_ROOT\*\shell\Open with Notepad\command]
 @="notepad.exe %1"
-
-
-;;;; Add-Power_Desktop_Menu.reg - Vishal Gupta for AskVG.com
-[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Power Menu]
-"MUIVerb"="Power Menu"
-"SubCommands"="lock;logoff;switch;sleep;hibernate;restart;safemode;shutdown;hybridshutdown"
-"Icon"="shell32.dll,215"
-"Position"="bottom"
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\lock]
-@="Lock"
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\lock\command]
-@="Rundll32 User32.dll,LockWorkStation"
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\logoff]
-@="Log Off"
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\logoff\command]
-@="Shutdown -l"
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\switch]
-@="Switch User"
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\switch\command]
-@="tsdiscon.exe"
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\sleep]
-@="Sleep"
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\sleep\command]
-@="rundll32.exe powrprof.dll,SetSuspendState Sleep"
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\hibernate]
-@="Hibernate"
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\hibernate\command]
-@="Shutdown -h"
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\restart]
-@="Restart"
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\restart\command]
-@="Shutdown -r -f -t 00"
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\safemode]
-@="Restart with Boot Options Menu"
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\safemode\command]
-@="Shutdown -r -o -f -t 00"
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\shutdown]
-@="Shut Down"
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\shutdown\command]
-@="Shutdown -s -f -t 00"
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\hybridshutdown]
-@="Shut Down (Hybrid)"
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\hybridshutdown\command]
-@="Shutdown -s -f -t 00 -hybrid"
 
 
 ;;;; Add-Take_Ownership.reg

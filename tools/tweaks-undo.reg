@@ -32,6 +32,32 @@ Windows Registry Editor Version 5.00
 [-HKEY_CLASSES_ROOT\txtfile\shell\copytoclip]
 
 
+;;;; Remove-Desktop_Power_Sub_Menu.reg
+[-HKEY_CLASSES_ROOT\DesktopBackground\Shell\Power Menu]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\lock]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\logoff]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\switch]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\sleep]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\hibernate]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\restart]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\safemode]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\shutdown]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\hybridshutdown]
+
+
+;;;; Remove-Desktop_Run.reg - Richard Frost
+[-HKEY_CLASSES_ROOT\DesktopBackground\Shell\Run]
+
+
 ;;;; Remove-Open_Command_Window_Here.reg - Shawn Brink - http://www.sevenforums.com
 [HKEY_CLASSES_ROOT\Directory\Background\shell\cmd]
 @="@shell32.dll,-8506"
@@ -75,28 +101,6 @@ Windows Registry Editor Version 5.00
 
 ;;;; Remove-Open_With_Notepad.reg
 [-HKEY_CLASSES_ROOT\*\shell\Open with Notepad]
-
-
-;;;; Remove-Power_Desktop_Menu.reg - Vishal Gupta for AskVG.com
-[-HKEY_CLASSES_ROOT\DesktopBackground\Shell\Power Menu]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\lock]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\logoff]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\switch]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\sleep]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\hibernate]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\restart]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\safemode]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\shutdown]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\hybridshutdown]
 
 
 ;;;; Remove-Take_Ownership.reg
