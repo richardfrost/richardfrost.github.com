@@ -1,0 +1,113 @@
+[Adblock Plus 2.0]
+! Checksum:
+! Version: 201311012
+! Title: MyABP
+! Last modified: 12 Oct 2013 6:51 UTC
+! Expires: Never
+! Homepage: http://www.richardfrost.info
+! Licence: GPLv3
+!
+!-----------------------Select website sidebar filters-----------------------!
+
+!----------------
+! Whitelist
+!----------------
+@@|https://www.boxeldercu.com
+@@|https://www.xpressbillpay.com
+
+
+
+!----------------
+! Misc
+!----------------
+! Disable Twitter Previews
+twitter.com##.is-preview
+
+
+
+!----------------
+! Global Filters
+!----------------
+###moreContent
+###rightRailWidget
+##.moreAbout
+
+! Global Filter Sources:
+!bbc.co.uk##.top-index-stories
+!dailymail.co.uk##.rotator-panels
+!news.sky.com###related_stories
+!reuters.com###relatedNews
+!tmz.com###rightrail
+###relatedNews
+###related_stories
+###rightrail
+##.rotator-panels
+##.top-index-stories
+
+
+
+!----------------
+! Site-Specific
+!----------------
+abcnews.go.com###blogs-more-coverage
+abcnews.go.com##.ob_container
+abcnews.go.com##.related-stories
+abcnews.go.com##.scroller
+abcnews.go.com##.sidebar
+abcnews.go.com##.story-embed-end
+abcnews.go.com##.widget
+ap.org##.ap-mediabox-td
+ap.org##.ap_widget
+avaxnews.com
+bbc.co.uk##.layout-block-b
+cbslocal.com##.entry-other-bar
+cbslocal.com##.right-bar
+cnbc.com##.imgasset
+dailycaller.com###flyThrough
+dailycaller.com##.headline
+dailycaller.com###ob_card
+dailycaller.com##.widget_container
+dailymail.co.uk##.beta
+embed.newsinc.com/*
+express.co.uk##.right-column
+foxnews.com##.c
+gawker.com##.site
+gizmodo.com##.site
+google.com##.gc-message-sms-cancel
+guardian.co.uk###promo
+guardian.co.uk##.component
+guardian.co.uk##.edge
+guardian.co.uk##.gigantic-pixie-bar
+guardian.co.uk##.promo-component
+guardian.co.uk##.list-of-trails
+www.ibtimes.co.uk##.bk_playtv1
+www.ibtimes.co.uk##.bk_popular
+kotaku.com##.site
+lifehacker.com##.site
+nbcwashington.com###storyInline
+nbcwashington.com##.mediaFull
+nydailynews.com##.vr-automation-module
+politico.com###secondaryContent
+politico.com##.tangential-wrapper
+reuters.com##.feature
+reuters.com##.ob_dual_container
+reuters.com##.ob_stripDual_container
+reuters.com##.ob_strip_container
+slickdeals.net##.pdc-avatar
+taboolasyndication.com
+telegraph.co.uk##.oneThird
+telegraph.co.uk##.storyFt
+telegraph.co.uk##.summaryMedium
+thesun.co.uk##.right-hand-column
+tmz.com###header-featured-news
+usnews.nbcnews.com###most-popular
+usnews.nbcnews.com##.popular
+washingtonguardian.com##.sidebar
+weeklystandard.com##.article-trailer
+weeklystandard.com##.teaser
+news.yahoo.com##.ymg-carousel
+news.yahoo.com##.yom-section
+youtube.com###comments-view
+youtube.com###video-sidebar
+youtube.com###watch-sidebar
+youtube.com###watch7-sidebar
