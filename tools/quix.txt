@@ -3,7 +3,7 @@
 @Merlins
 cal		javascript:var%20s;if(window.getSelection){s=window.getSelection();}else{s=document.selection.createRange().text;}var%20t=prompt('Please%20enter%20a%20description%20for%20the%20event',s);if(t){void(window.open(encodeURI('http://www.google.com/calendar/event?ctext='+t+'&action=TEMPLATE&pprop=HowCreated%3AQUICKADD'),'gcal'));}else{void(s);} Add event to Google Calendar
 down	http://downforeveryoneorjustme.com/%d Is this site downforeveryoneorjustme?
-mob		javascript:function%20iptxt(){var%20d=document;try{if(!d.body)throw(0);window.location='http://www.instapaper.com/text?u='+encodeURIComponent(d.location.href);}catch(e){alert('Please%20wait%20until%20the%20page%20has%20loaded.');}}iptxt();void(0)  Make page into purty Instapaper mobile style
+mob		javascript:function%20iptxt(){var%20d=document;try{if(!d.body)throw(0);window.location='http://www.instapaper.com/text?u='+encodeURIComponent(d.location.href);}catch(e){alert('Please%20wait%20until%20the%20page%20has%20loaded.');}}iptxt();void(0)  Make page into pretty Instapaper mobile style
 text	javascript:location.href='http://www.aaronsw.com/2002/html2text/?url='+document.location.href;  Transform this page into Markdown
 
 
