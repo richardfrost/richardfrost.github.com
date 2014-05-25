@@ -6,19 +6,24 @@ down	http://downforeveryoneorjustme.com/%d Is this site downforeveryoneorjustme?
 mob		javascript:function%20iptxt(){var%20d=document;try{if(!d.body)throw(0);window.location='http://www.instapaper.com/text?u='+encodeURIComponent(d.location.href);}catch(e){alert('Please%20wait%20until%20the%20page%20has%20loaded.');}}iptxt();void(0)  Make page into purty Instapaper mobile style
 text	javascript:location.href='http://www.aaronsw.com/2002/html2text/?url='+document.location.href;  Transform this page into Markdown
 
+
 @**Richard's Extended Quix**
 @Please visit my <a href="http://richardfrost.info">Website</a> for more information & cool tips!
 website	http://richardfrost.info Shortcut to my <a href="http://richardfrost.info">Website</a>
 
+
 @*Documents/Media*
 cleanyt	javascript:void(location.href='http://quietube.com/v.php/'+location.href) Cleaner <a href="http://www.youtube.com">YouTube</a> interface.
 docs	javascript:if('%s'==''){file=prompt("Provide%20URL%20of%20Document%20to%20view%20with%20Google%20Docs:");}else%20file='%s';if(file)window.location='http://docs.google.com/viewer?url='+file; View Online Documents (PDF, TIFF, PPT) with Google Docs. Example: "docs URL"
-keepvid	javascript:(a=(b=document).createElement('script')).src='http://keepvid.com/js/bm.js',b.body.appendChild(a);void(0); Download Videos using <a href="http://keepvid.com">KeepVid.com</a> (May require Java).
+keepvid	javascript:(a=(b=document).createElement('script')).src='http://keepvid.com/js/bm.js',b.body.appendChild(a);void(0); Download Videos using <a href="http://keepvid.com">KeepVid.com</a>.
 pdf		javascript:if('%s'==''){terms='%r';}else{terms='%s';}window.location='http://pdfmyurl.com/?url='+terms; Create a PDF file of the current website, or a specified website (Page must be publicly accessible). Example: "pdf URL".
 pics	javascript:(function(){op=window.open('','P');od=op.document;bd='';j=0;for(i=0;i<document.images.length;i++){j++;bd+='.<img%20src%20=%20'+document.images[i].src+'>';}t=bd;od.writeln(t);od.close;})() Opens a new page comprised of all the images from current web page.
 savepdf javascript:void(window.open('http://www.web2pdfconvert.com/convert.aspx?cURL='+escape(location.href)+'&title='+escape(document.title)+'&ref=browser'+'')) use the <a href='http://www.web2pdfconvert.com/'>web2pdfconverter</a> service to download a pdf of the current webpage.
 snap	javascript:terms='%r';window.location='http://Aviary.com/'+terms; Take a full screenshot of the current webpage (Page must be publicly accessible). 
-yt		javascript:(function(){url='http://deturl.com/download-video.js';document.body.appendChild(document.createElement('script')).src=url;})(); Download Videos from <a href="http://www.youtube.com">YouTube</a> and other streaming sites using <a href="http://deturl.com">deturl</a>.
+cc		javascript:if('%s'=='pop'){window.open('http://www.clipconverter.cc/?ref=bookmarklet&url='+encodeURIComponent(location.href));}else{window.location='http://www.clipconverter.cc/?ref=bookmarklet&url='+encodeURIComponent(location.href);} Navigate window ('cc pop' for pop-up) to <a href='http://www.clipconverter.cc/'>Clip Converter</a> to download and donvert current YouTube Videos to various formats.
+dirpy	javascript:(function(){var%20toks=window.location.href.split('v=',2);var%20videoid='';if(toks.length>=2){videoid=toks[1].substring(0,11);}if(videoid!=''){if('%s'=='pop'){window.open('http://dirpy.com/studio/'+videoid);}else{window.location='http://dirpy.com/studio/'+videoid;}}else{alert('Couldn\'t%20gather%20a%20YouTube%20video%20id%20to%20send%20to%20Dirpy%20Studio.%20Are%20you%20on%20a%20YouTube%20video%20page?');}})() Navigate window ('dirpy pop' for pop-up) to <a href='http://www.dirpy.com'>Dirpy</a> to download the current YouTube videos and audio. 
+yt		javascript:(function(w,d,x){x=new(window.XMLHttpRequest||ActiveXObject)('Microsoft.XMLHTTP');x.onreadystatechange=function(){if(x.readyState==4){if(x.status==200)d.body.appendChild(d.createElement('script')).src=JSON.parse(x.responseText).query.results.url;else%20console.log('ERR',x.status,x.statusText)}};x.open('GET','//query.yahooapis.com/v1/public/yql?q='+encodeURIComponent('select%20*%20from%20json%20where%20url="http://noflr.deturl.com/l.asp"')+'&format=json');x.send()})(window,document); Download Videos from <a href="http://www.youtube.com">YouTube</a> and other streaming sites using <a href="http://deturl.com">deturl</a>.
+
 
 @*Searching/Web*
 archive javascript:(function(){if('%s'){terms='%s'}else{terms='%r';}location="http://web.archive.org/archive_request_ng?collection=web&url="+terms+"&Submit=Take+Me+Back%21";}()) Presents a page with links to old <a href="http://www.archive.org/">archived</a> versions of current, or specified, website. Example: "archive URL".
@@ -28,10 +33,12 @@ gcache	javascript:(function(){if('%s'){terms='%s'}else{terms='%r';}location="htt
 retail	javascript:if('%s'==''){terms='%d';}else{terms='%s';}window.open(encodeURI('http://www.retailmenot.com/search.php?query='+terms)); Search <a href="http://www.retailmenot.com/">RetailMeNot</a> for coupon codes for the current or specified site. Example: "retail amazon.com".
 site	javascript:var%20terms='%s';if(terms==''){terms=prompt('Enter%20search%20terms%20for%20current%20site:')};if(terms){window.location='http://www.google.com/search?num=100&q=site:'+'%d'+'%20'+terms;} Search current website with <a href="http://www.google.com">Google Search</a>. Example: "site books".
 
+
 @*Miscellaneous*
 game	javascript:var%20s=document.createElement('script');s.type='text/javascript';document.body.appendChild(s);s.src='http://dl.dropbox.com/u/3309814/Web/JavaScript/asteroids.min.js';void(0); Turn the current webpage into an Asteroids game!
 marklet javascript:(function(){if(document.getElementById('bmletMain')){bmletRefresh();return;};var%20d=document;s=d.createElement('script');s.setAttribute('src','http://www.marklets.com/bookmarklets/Marklet/marklet.js');s.setAttribute('type','text/javascript');d.body.appendChild(s);})(); Additional bookmarklets from <a href="http://marklets.com">Marklets.com</a>.
 mins	javascript:window.location='http://'+'%s'+'.minutes.at/'+'%r'; Limit page viewing time for the current webpage in minutes. Example: "mins 10".
+
 
 @*Tools/Advanced*
 chars	javascript:(function(){var%20D=document,i,f,j,e;for(i=0;f=D.forms[i];++i)for(j=0;e=f[j];++j)if(e.type=="text"||e.type=="password"||e.tagName.toLowerCase()=="textarea")S(e);function%20S(e){if(!e.N){var%20x=D.createElement("span"),s=x.style;s.color="green";s.background="white";s.font="bold%2010pt%20sans-serif";s.verticalAlign="top";e.parentNode.insertBefore(x,e.nextSibling);function%20u(){x.innerHTML=e.value.length;}u();e.onchange=u;e.onkeyup=u;e.oninput=u;e.N=x;}else{e.parentNode.removeChild(e.N);e.N=0;}}})() Count the number of characters inside each text box on current page.
@@ -42,6 +49,7 @@ plinks	javascript:(function(){s='';for%20(i=0;i<document.images.length;i++){s+='
 rename	javascript:(function(){var%20t=document.title;if('%s'==''){n=prompt('Enter%20a%20new%20title%20for%20this%20page',t)}else%20n='%s';if(n!=''&&n!=t)document.title=n;})() Rename current page's title.
 slinks	javascript:(function(){terms=prompt('terms:');s='';for%20(i=0;i<document.links.length;++i){if(document.links[i].href.indexOf(terms)!=-1||document.links[i].innerHTML.indexOf(terms)!=-1){s+='<a%20href="'+document.links[i].href+'">'+document.links[i].href+'</a><br>'}};if(s!=''){fg=window.open();fg.document.write(s);document.close();}else{alert('No%20results%20found.');}})() Opens a new page with all URLs from the current page containing the specified keyword. Example: "slinks pdf" will list only links containing "pdf".
 toggle	javascript:(function(){function%20checkFrames(w)%20{try%20{var%20inputs%20=%20w.document.getElementsByTagName('input');for%20(var%20i=0;%20i%20<%20inputs.length;%20i++)%20{if%20(inputs[i].type%20&&%20inputs[i].type%20==%20'checkbox'){inputs[i].checked%20=%20!inputs[i].checked;}}}%20catch%20(e){}if(w.frames%20&&%20w.frames.length>0){for(var%20i=0;i<w%20.frames.length;i++){var%20fr=w.frames[i];checkFrames(fr);}}}checkFrames(window);})() Toggle all check boxes on current page.
+
 
 >Testing:
 >Search Links
