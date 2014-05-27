@@ -1,23 +1,12 @@
 > Richard's Extended Quix Config
-<<<<<<< HEAD
 >  Syntax: Command	Executable Description
 >    Replacement Tokens: %s = Search terms, %d = Current domain, %r = Current URL
-=======
-
-@Merlins
-cal		javascript:var%20s;if(window.getSelection){s=window.getSelection();}else{s=document.selection.createRange().text;}var%20t=prompt('Please%20enter%20a%20description%20for%20the%20event',s);if(t){void(window.open(encodeURI('http://www.google.com/calendar/event?ctext='+t+'&action=TEMPLATE&pprop=HowCreated%3AQUICKADD'),'gcal'));}else{void(s);} Add event to Google Calendar
-down	http://downforeveryoneorjustme.com/%d Is this site downforeveryoneorjustme?
-mob		javascript:function%20iptxt(){var%20d=document;try{if(!d.body)throw(0);window.location='http://www.instapaper.com/text?u='+encodeURIComponent(d.location.href);}catch(e){alert('Please%20wait%20until%20the%20page%20has%20loaded.');}}iptxt();void(0)  Make page into pretty Instapaper mobile style
-text	javascript:location.href='http://www.aaronsw.com/2002/html2text/?url='+document.location.href;  Transform this page into Markdown
->>>>>>> 2b5fd8321e75b475283a10f877b62d420f31ec40
-
 
 @**Richard's Extended Quix**
 @Please visit my <a href="http://richardfrost.info">Website</a> for more information & cool tips!
 website	http://richardfrost.info Shortcut to my <a href="http://richardfrost.info">Website</a>
 blog	http://blog.richardfrost.info Shortcut to my <a href="http://blog.richardfrost.info">blog</a>
 
-<<<<<<< HEAD
 @*Media*
 cc		javascript:if('%s'=='pop'){window.open('http://www.clipconverter.cc/?ref=bookmarklet&url='+encodeURIComponent(location.href));}else{window.location='http://www.clipconverter.cc/?ref=bookmarklet&url='+encodeURIComponent(location.href);} Go to <a href='http://www.clipconverter.cc/'>Clip Converter</a> ('cc pop' for pop-up) to download and donvert current YouTube Videos to various formats.
 docs	javascript:if('%s'==''){file=prompt("Provide%20URL%20of%20Document%20to%20view%20with%20Google%20Docs:");}else%20file='%s';if(file)window.location='http://docs.google.com/viewer?url='+file; View Online Documents (PDF, TIFF, PPT) with Google Docs. Example: "docs URL"
@@ -29,31 +18,10 @@ yt		javascript:(function(w,d,x){x=new(window.XMLHttpRequest||ActiveXObject)('Mic
 @*Searching*
 archive	javascript:(function(){if('%s'){terms='%s'}else{terms='%r';}location="http://web.archive.org/archive_request_ng?collection=web&url="+terms+"&Submit=Take+Me+Back%21";}()) Presents a page with links to old <a href="http://www.archive.org/">archived</a> versions of current, or specified, website. Example: "archive URL".
 bug		javascript:if('%s'){if('%s'=='pop'){window.open(encodeURI('http://www.bugmenot.com/view/%d'))}else{window.location='http://www.bugmenot.com/view/%s'}}else{window.location='http://www.bugmenot.com/view/%d'} Use <a href="http://www.bugmenot.com/">BugMeNot</a> to bypass registration. ('bug pop' for popup; 'bug <DOMAIN>' for different domain.)
-=======
-
-@*Documents/Media*
-cleanyt	javascript:void(location.href='http://quietube.com/v.php/'+location.href) Cleaner <a href="http://www.youtube.com">YouTube</a> interface.
-docs	javascript:if('%s'==''){file=prompt("Provide%20URL%20of%20Document%20to%20view%20with%20Google%20Docs:");}else%20file='%s';if(file)window.location='http://docs.google.com/viewer?url='+file; View Online Documents (PDF, TIFF, PPT) with Google Docs. Example: "docs URL"
-keepvid	javascript:(a=(b=document).createElement('script')).src='http://keepvid.com/js/bm.js',b.body.appendChild(a);void(0); Download Videos using <a href="http://keepvid.com">KeepVid.com</a>.
-pdf		javascript:if('%s'==''){terms='%r';}else{terms='%s';}window.location='http://pdfmyurl.com/?url='+terms; Create a PDF file of the current website, or a specified website (Page must be publicly accessible). Example: "pdf URL".
-pics	javascript:(function(){op=window.open('','P');od=op.document;bd='';j=0;for(i=0;i<document.images.length;i++){j++;bd+='.<img%20src%20=%20'+document.images[i].src+'>';}t=bd;od.writeln(t);od.close;})() Opens a new page comprised of all the images from current web page.
-savepdf javascript:void(window.open('http://www.web2pdfconvert.com/convert.aspx?cURL='+escape(location.href)+'&title='+escape(document.title)+'&ref=browser'+'')) use the <a href='http://www.web2pdfconvert.com/'>web2pdfconverter</a> service to download a pdf of the current webpage.
-snap	javascript:terms='%r';window.location='http://Aviary.com/'+terms; Take a full screenshot of the current webpage (Page must be publicly accessible). 
-cc		javascript:if('%s'=='pop'){window.open('http://www.clipconverter.cc/?ref=bookmarklet&url='+encodeURIComponent(location.href));}else{window.location='http://www.clipconverter.cc/?ref=bookmarklet&url='+encodeURIComponent(location.href);} Navigate window ('cc pop' for pop-up) to <a href='http://www.clipconverter.cc/'>Clip Converter</a> to download and donvert current YouTube Videos to various formats.
-dirpy	javascript:(function(){var%20toks=window.location.href.split('v=',2);var%20videoid='';if(toks.length>=2){videoid=toks[1].substring(0,11);}if(videoid!=''){if('%s'=='pop'){window.open('http://dirpy.com/studio/'+videoid);}else{window.location='http://dirpy.com/studio/'+videoid;}}else{alert('Couldn\'t%20gather%20a%20YouTube%20video%20id%20to%20send%20to%20Dirpy%20Studio.%20Are%20you%20on%20a%20YouTube%20video%20page?');}})() Navigate window ('dirpy pop' for pop-up) to <a href='http://www.dirpy.com'>Dirpy</a> to download the current YouTube videos and audio. 
-yt		javascript:(function(w,d,x){x=new(window.XMLHttpRequest||ActiveXObject)('Microsoft.XMLHTTP');x.onreadystatechange=function(){if(x.readyState==4){if(x.status==200)d.body.appendChild(d.createElement('script')).src=JSON.parse(x.responseText).query.results.url;else%20console.log('ERR',x.status,x.statusText)}};x.open('GET','//query.yahooapis.com/v1/public/yql?q='+encodeURIComponent('select%20*%20from%20json%20where%20url="http://noflr.deturl.com/l.asp"')+'&format=json');x.send()})(window,document); Download Videos from <a href="http://www.youtube.com">YouTube</a> and other streaming sites using <a href="http://deturl.com">deturl</a>.
-
-
-@*Searching/Web*
-archive javascript:(function(){if('%s'){terms='%s'}else{terms='%r';}location="http://web.archive.org/archive_request_ng?collection=web&url="+terms+"&Submit=Take+Me+Back%21";}()) Presents a page with links to old <a href="http://www.archive.org/">archived</a> versions of current, or specified, website. Example: "archive URL".
->bug	javascript:if('%s'==''||'%s'=='nw'){terms='%d';}else{terms='%s';}if('%s'=='nw'){window.open(encodeURI('http://www.bugmenot.com/view/'+terms));}else{window.location='http://bugmenot.com/view/'+terms;} Use <a href="http://www.bugmenot.com/">BugMeNot</a> to bypass registration on sites (use nw to display in a new window).
-bug		javascript:if('%s'==''){terms='%d';}else{terms='%s';}window.open(encodeURI('http://www.bugmenot.com/view/'+terms)); Open pop-up to <a href="http://www.bugmenot.com/">BugMeNot</a> for the current website.
->>>>>>> 2b5fd8321e75b475283a10f877b62d420f31ec40
 gcache	javascript:(function(){if('%s'){terms='%s'}else{terms='%r';}location="http://www.google.com/search?q=cache:"+terms;}()) View Google's cache for the current or specified page. Example: "gcache URL".
 retail	javascript:if('%s'){if('%s'=='pop'){window.open(encodeURI('http://www.retailmenot.com/search.php?query=%d'))}else{window.location='http://www.retailmenot.com/search.php?query=%s'}}else{window.location='http://www.retailmenot.com/search.php?query=%d'))} Search <a href="http://www.retailmenot.com/">RetailMeNot</a> for coupon codes for the current ('retail pop' for popup) or specified site. Example: "retail amazon.com".
 site	javascript:var%20terms='%s';if(terms==''){terms=prompt('Enter%20search%20terms%20for%20current%20site:')};if(terms){window.location='http://www.google.com/search?num=100&q=site:'+'%d'+'%20'+terms;} Search current website with <a href="http://www.google.com">Google Search</a>. Example: "site books".
 
-<<<<<<< HEAD
 @*Web Design*
 css		javascript:(function(b)%20{var%20c=b.createElement("style");c.appendChild(b.createTextNode("*:hover{outline:2px%20solid%20red;}caption:hover,thead:hover,tbod:hover,tfoot:hover,tr:hover{outline:2px%20dotted%20red;}td:hover,th:hover{outline:2px%20solid%20red;}h1:hover,h2:hover,h3:hover,h4:hover,h5:hover,h6:hover{outline:2px%20solid%20green;}ol:hover,ul:hover{outline:2px%20dotted%20blue;}li:hover{outline:2px%20solid%20blue;}div:hover{outline:2px%20dotted%20aqua;}span:hover{outline:2px%20solid%20aqua;}"));b.body.appendChild(c);var%20f=b.createElement("div");f.innerHTML="Hover%20stuff!";f.style.position="fixed";f.style.bottom="0px";f.style.left="0px";f.style.right="0px";f.style.backgroundColor="rgba(32,32,32,0.8)";f.style.color="#fff";f.style.textShadow="0%202px%202px%20#000";f.style.padding="1em";f.style.fontSize="12px";f.style.fontFamily="Lucida%20Grande";f.style.border="1px%20solid%20#666";f.style.outline="1px%20solid%20#000";b.body.appendChild(f);function%20a(g)%20{return[String(g.tagName).toLowerCase(),g.id&&("#"+g.id),g.className&&("."+g.className.split("%20").join("."))].join("");}%20function%20e(h)%20{var%20g=[];do%20{g.unshift(h);}%20while((h=h.parentNode));g.shift();return%20g;}%20function%20d(h)%20{var%20g=[];e(h).forEach(function(i)%20{g.push(a(i));});return%20g.join("%20>%20");}%20b.body.addEventListener("mouseover",function(h)%20{var%20g=h.target;f.innerHTML=d(g);},false);})(document); <a href='http://subtlegradient.com/articles/2009/07/23/subtle_hover_css_inspect_bookmarklet.html'>CSSInspect</a> bookmarklet.
 design	javascript:function%20fnStartDesign(sUrl)%20{var%20nScript%20=%20document.createElement('script');nScript.setAttribute('language','JavaScript');nScript.setAttribute('src',sUrl);document.body.appendChild(nScript);}fnStartDesign('http://www.sprymedia.co.uk/design/design/media/js/design-loader.js'); <a href='http://www.sprymedia.co.uk/article/design'>Design</a> bookmarklet.
@@ -65,18 +33,6 @@ snoop	javascript:(function()%20{var%20d=document,s,e;var%20el=d.getElementById('
 chars	javascript:(function(){var%20D=document,i,f,j,e;for(i=0;f=D.forms[i];++i)for(j=0;e=f[j];++j)if(e.type=="text"||e.type=="password"||e.tagName.toLowerCase()=="textarea")S(e);function%20S(e){if(!e.N){var%20x=D.createElement("span"),s=x.style;s.color="green";s.background="white";s.font="bold%2010pt%20sans-serif";s.verticalAlign="top";e.parentNode.insertBefore(x,e.nextSibling);function%20u(){x.innerHTML=e.value.length;}u();e.onchange=u;e.onkeyup=u;e.oninput=u;e.N=x;}else{e.parentNode.removeChild(e.N);e.N=0;}}})() Show the number of characters inside each text box on current page.
 down	javascript:if('%s'){http://downforeveryoneorjustme.com/%s}else{http://downforeveryoneorjustme.com/%d} Is the site <a href='http://www.isup.me/'>down for everyone or just me?</a>
 marklet javascript:(function(){if(document.getElementById('bmletMain')){bmletRefresh();return;};var%20d=document;s=d.createElement('script');s.setAttribute('src','http://www.marklets.com/bookmarklets/Marklet/marklet.js');s.setAttribute('type','text/javascript');d.body.appendChild(s);})(); Additional bookmarklets from <a href="http://marklets.com">Marklets.com</a>.
-=======
-
-@*Miscellaneous*
-game	javascript:var%20s=document.createElement('script');s.type='text/javascript';document.body.appendChild(s);s.src='http://dl.dropbox.com/u/3309814/Web/JavaScript/asteroids.min.js';void(0); Turn the current webpage into an Asteroids game!
-marklet javascript:(function(){if(document.getElementById('bmletMain')){bmletRefresh();return;};var%20d=document;s=d.createElement('script');s.setAttribute('src','http://www.marklets.com/bookmarklets/Marklet/marklet.js');s.setAttribute('type','text/javascript');d.body.appendChild(s);})(); Additional bookmarklets from <a href="http://marklets.com">Marklets.com</a>.
-mins	javascript:window.location='http://'+'%s'+'.minutes.at/'+'%r'; Limit page viewing time for the current webpage in minutes. Example: "mins 10".
-
-
-@*Tools/Advanced*
-chars	javascript:(function(){var%20D=document,i,f,j,e;for(i=0;f=D.forms[i];++i)for(j=0;e=f[j];++j)if(e.type=="text"||e.type=="password"||e.tagName.toLowerCase()=="textarea")S(e);function%20S(e){if(!e.N){var%20x=D.createElement("span"),s=x.style;s.color="green";s.background="white";s.font="bold%2010pt%20sans-serif";s.verticalAlign="top";e.parentNode.insertBefore(x,e.nextSibling);function%20u(){x.innerHTML=e.value.length;}u();e.onchange=u;e.onkeyup=u;e.oninput=u;e.N=x;}else{e.parentNode.removeChild(e.N);e.N=0;}}})() Count the number of characters inside each text box on current page.
-dual	javascript:page1=location.href;page1=prompt('Enter%201st%20Webpage:',page1);if(page1){page2=prompt('Enter%202nd%20Webpage:',page1);}if(page1&&page2){dual='<frameset%20cols=\'*,*\'>\n<frame%20src=\''+page1+'\'/>';dual+='<frame%20src=\''+page2+'\'/>\n';dual+='</frameset>';with(document){write(dual);void(close())}}else{void(null)} Open 2 pages side by side.
->>>>>>> 2b5fd8321e75b475283a10f877b62d420f31ec40
 nocss	javascript:for(i=0;i<document.styleSheets.length;i++){void(document.styleSheets.item(i).disabled=true);}el=document.getElementsByTagName('*');for(i=0;i<el.length;i++){void(el[i].style.cssText='');} Remove stylesheet formatting on current page.
 noimg	javascript:(function(){function%20toArray%20(c){var%20a,%20k;a=new%20Array;for%20(k=0;%20k%20<%20c.length;%20++k)a[k]=c[k];return%20a;}var%20images,%20img,%20altText;images=toArray(document.images);for%20(var%20i=0;%20i%20<%20images.length;%20++i){img=images[i];altText=document.createTextNode(img.alt);img.parentNode.replaceChild(altText,%20img)}})(); Remove all images from current page.
 rename	javascript:(function(){var%20t=document.title;if('%s'==''){n=prompt('Enter%20a%20new%20title%20for%20this%20page',t)}else%20n='%s';if(n!=''&&n!=t)document.title=n;})() Rename current page's title.
@@ -85,22 +41,6 @@ toggle	javascript:(function(){function%20checkFrames(w)%20{try%20{var%20inputs%2
 top		javascript:(function(){window.location=document.location.protocol+"//"+document.location.host;})();   Jump to top level of the current site
 up		javascript:(function(){window.location=document.location.href.replace(/\/$/,'').split('/').slice(0,-1).join('/')+"/";})();   Move up one level in the sites directory structure
 
-<<<<<<< HEAD
 @*Miscellaneous*
 asteroids	javascript:var%20s=document.createElement('script');s.type='text/javascript';document.body.appendChild(s);s.src='http://richardfrost.info/tools/asteroids.min.js';void(0); Turn the current webpage into an Asteroids game!
 mins	javascript:window.location='http://'+'%s'+'.minutes.at/'+'%r'; Limit page viewing time for the current webpage in minutes. Example: "mins 10".
-=======
-
->Testing:
->Search Links
->javascript:(function(){var x,n,nD,z,i; function htmlEscape(s){s=s.replace(/&/g,'&');s=s.replace(/>/g,'>');s=s.replace(/</g,'<');return s;} function attrQuoteEscape(s){s=s.replace(/&/g,'&'); s=s.replace(/"/g, '"');return s;} x=prompt("show links with this word/phrase in link text or target url (leave blank to list all links):", ""); n=0; if(x!=null) { x=x.toLowerCase(); nD = window.open().document; nD.writeln('<html><head><title>Links containing "'+htmlEscape(x)+'"</title><base target="_blank"></head><body>'); nD.writeln('Links on <a href="'+attrQuoteEscape(location.href)+'">'+htmlEscape(location.href)+'</a><br> with link text or target url containing "' + htmlEscape(x) + '"<br><hr>'); z = document.links; for (i = 0; i < z.length; ++i) { if ((z[i].innerHTML && z[i].innerHTML.toLowerCase().indexOf(x) != -1) || z[i].href.toLowerCase().indexOf(x) != -1 ) { nD.writeln(++n + '. <a href="' + attrQuoteEscape(z[i].href) + '">' + (z[i].innerHTML || htmlEscape(z[i].href)) + '</a><br>'); } } nD.writeln('<hr></body></html>'); nD.close(); } })();
-
->Open All Links
->javascript:(function(){var n_to_open,dl,dll,i; function linkIsSafe(u) { if (u.substr(0,7)=='https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=') return false; if (u.substr(0,11)=='javascript:') return false; return true; } n_to_open = 0; dl = document.links; dll = dl.length; for(i = 0; i < dll; ++i) { if (linkIsSafe(dl[i].href)) ++n_to_open; } if (!n_to_open) alert ('no links'); else { if (confirm('Open ' + n_to_open + ' links in new windows&')) for (i = 0; i < dll; ++i) if (linkIsSafe(dl[i].href)) window.open(dl[i].href); } })();
-
->Images in a new page
->javascript:(function(){s='';for (i=0;i<document.images.length;i++){s+='<img src="'+document.images[i].src+'"><br>'};if(s!=''){fg=window.open();fg.document.write('<center>'+s+'</center>');document.close();}else{alert('No images!');}})()
-
->Image as links in a new page
->javascript:(function(){s='';for (i=0;i<document.images.length;i++){s+='<a href="'+document.images[i].src+'">'+document.images[i].src+'</a><br>'};if(s!=''){fg=window.open();fg.document.write(s);document.close();}else{alert('No images!');}})()
->>>>>>> 2b5fd8321e75b475283a10f877b62d420f31ec40
