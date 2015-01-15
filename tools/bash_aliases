@@ -5,7 +5,9 @@ alias aliases="cat ~/.bash_aliases"
 alias reload_aliases=". ~/.bash_aliases"
 alias edit_aliases="vi ~/.bash_aliases"
 alias update_aliases="wget -q http://www.richardfrost.info/tools/bash_aliases -O $HOME/.bash_aliases; . $HOME/.bash_aliases"
+
 alias update_screen="wget -q http://www.richardfrost.info/tools/screenrc -O $HOME/.screenrc"
+alias edit_screen="vi ~/.screenrc"
 
 
 #============================
