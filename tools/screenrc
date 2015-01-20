@@ -1,7 +1,7 @@
 #============================
 # Screen Settings
 #============================
-# Toggle 'fullscreen' or not.
+# Toggle 'fullscreen' hardstatus (bottom toolbar)
 bind f eval "hardstatus alwaysignore"
 bind F eval "hardstatus alwayslastline"
 
@@ -20,11 +20,14 @@ logfile "$HOME/screen-%t_%n.log"
 #============================
 # Toolbar
 #============================
-# hardstatus off # Display messages overlaid in reverse video at the bottom of the screen
 hardstatus alwayslastline
+caption splitonly
 
-# My Toolbar: CORP-WEB01 | 0.06 0.14 0.14 |   0$ Terminal   1$ RailsConsole  2$ WebServer  3-$ ScraperLog     | 6:30pm | 01.08.2015
-hardstatus string "%{b kw}%H %{w}| %{g}%l %{w}| %{-b kw}%u %-Lw%{= cW}%50> %n%f %t %{-}%+Lw%<%-22=%{w}| %{g}%C%{m}%a %{w}| %{g}%m%{m}.%{g}%d%{m}.%{g}%Y"
+# My Toolbar: user@CORP-WEB01 | 0.06 0.14 0.14 |   0$ Terminal   1$ RailsConsole  2$ WebServer  3-$ ScraperLog     | 6:30pm | 01.08.2015
+hardstatus string "%{b kw}${USER}@%H %{w}|%{g} %l %{w}|%{-b kw} %u %-Lw%{= cW}%50> %n%f %t %{-}%+Lw%<%-22=%{w}|%{g} %C%{m}%a %{w}|%{g} %m%{m}.%{g}%d%{m}.%{g}%Y"
+
+# Caption (Available per split-window)
+caption string "%{mw}%-= %t %-="
 
 
 
