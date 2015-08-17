@@ -8,6 +8,7 @@ website	http://www.richardfrost.info Shortcut to my <a href="http://www.richardf
 blog	http://blog.richardfrost.info Shortcut to my <a href="http://blog.richardfrost.info">blog</a>
 
 @*Media*
+cc		javascript:(function(){window.open('http://www.clipconverter.cc/?ref=bookmarklet&url='+encodeURIComponent(location.href));})(); Download <a href="http://www.youtube.com">YouTube</a> audio/video clips with <a href="http://www.clipconverter.cc/">ClipConverter</a>.
 docs	javascript:(function(){if('%s'==''){file=prompt("Provide%20URL%20of%20Document%20to%20view%20with%20Google%20Docs:");}else%20file='%s';if(file)window.location='http://docs.google.com/viewer?url='+file}(); View Online Documents (PDF, TIFF, PPT) with Google Docs. Example: "docs URL"
 dirpy	javascript:(function(){window.open('http://www.dirpy.com/studio?url='+encodeURIComponent(location.href))})(); Download <a href="http://www.youtube.com">YouTube</a> audio/videos with <a href="http://www.dirpy.com">Dirpy</a>.
 keepvid	javascript:(function(){window.open('http://keepvid.com/?url='+encodeURIComponent(location.href)+'')})(); Download <a href="http://www.youtube.com">YouTube</a> videos using <a href="http://keepvid.com">KeepVid.com</a>.
