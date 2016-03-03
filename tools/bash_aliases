@@ -4,10 +4,8 @@
 alias aliases="cat ~/.bash_aliases"
 alias reload_aliases=". ~/.bash_aliases"
 alias edit_aliases="vi ~/.bash_aliases"
-alias update_aliases="wget -q http://www.richardfrost.info/tools/bash_aliases -O $HOME/.bash_aliases; . $HOME/.bash_aliases"
-
-alias update_screen="wget -q http://www.richardfrost.info/tools/screenrc -O $HOME/.screenrc"
-alias edit_screen="vi ~/.screenrc"
+alias update_aliases="wget -q http://www.richardfrost.info/tools/.bash_aliases -O $HOME/.bash_aliases; . $HOME/.bash_aliases"
+alias update_screen="wget -q http://www.richardfrost.info/tools/.screenrc -O $HOME/.screenrc"
 
 
 #============================
@@ -27,14 +25,18 @@ alias ......="cd ../../../../.."
 # Add some easy shortcuts for formatted directory listings and add a touch of color.
 alias ll='ls -lF --color=auto'
 alias la='ls -alF --color=auto'
-alias ls='ls -F'
+alias ls='ls -F ls --color=auto'
+
+# Add colored output to common commands
+alias grep='grep --color=auto'
+
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
 
 # Make some possibly destructive commands more interactive.
 #alias rm='rm -i'
 #alias mv='mv -i'
 #alias cp='cp -i'
-
-alias grep='grep --color=auto'
 
 
 #============================
@@ -73,10 +75,8 @@ alias glogp='git log --pretty=format:"%h %s" --graph'
 #============================
 # rails aliases
 #============================
-alias rseed='rake db:seed'
-alias railsc='rails console'
-alias sandbox='rails console --sandbox'
-alias server='rails server -p 80'
+alias railss='rails server -p 8080 -b 0.0.0.0'
+alias z='zeus'
 
 # app aliases
 alias tailscraper='tail -f ~/coursekeepers/log/scraper.log'
