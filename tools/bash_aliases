@@ -1,12 +1,13 @@
+# Richard Frost's Aliases
+# www.richardfrost.info
 #============================
-# Richard's Aliases
+# Alias Management
 #============================
-alias aliases="cat ~/.bash_aliases"
+alias aliases="cat ~/.bash_aliases | less"
 alias reload_aliases=". ~/.bash_aliases"
 alias edit_aliases="vi ~/.bash_aliases"
 alias update_aliases="wget -q http://www.richardfrost.info/tools/bash_aliases -O $HOME/.bash_aliases; . $HOME/.bash_aliases"
 alias update_screen="wget -q http://www.richardfrost.info/tools/screenrc -O $HOME/.screenrc"
-
 
 #============================
 # General aliases
@@ -15,21 +16,14 @@ alias update_screen="wget -q http://www.richardfrost.info/tools/screenrc -O $HOM
 alias ..="cd .."
 alias ..2="cd ../.."
 alias ...="cd ../.."
-alias ..3="cd ../../.."
-alias ....="cd ../../.."
-alias ..4="cd ../../../.."
-alias .....="cd ../../../.."
-alias ..5="cd ../../../../.."
-alias ......="cd ../../../../.."
 
 # Add some easy shortcuts for formatted directory listings and add a touch of color.
+alias ls='ls -F --color=auto'
 alias ll='ls -lF --color=auto'
 alias la='ls -alF --color=auto'
-alias ls='ls -F ls --color=auto'
 
 # Add colored output to common commands
 alias grep='grep --color=auto'
-
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
@@ -38,49 +32,42 @@ alias egrep='egrep --color=auto'
 #alias mv='mv -i'
 #alias cp='cp -i'
 
-
 #============================
-# git aliases
+# Git aliases
 #============================
 alias gst='git status'
-alias gstatus='git status'
-
-alias gl='git pull'
-alias gpull='git pull'
-
-alias gp='git push'
-alias gpush='git push'
-
 alias gd='git diff'
-
+alias gl='git pull'
+alias gp='git push'
+alias gf='git fetch'
+alias ga='git add'
 alias gadd='git add -A'
 alias gau='git add --update'
-
 alias gc='git commit -v'
-alias commit='git commit -v'
-
-alias greset='git reset HEAD *'
-
 alias gca='git commit -v -a'
-alias gb='git branch'
-alias gba='git branch -a'
-alias gco='git checkout'
-alias gcob='git checkout -b'
-alias gcot='git checkout -t'
-alias gcotb='git checkout --track -b'
-alias glog='git log'
+alias gr='git reset'
+alias greset='git reset HEAD *'
+alias glog='git log --oneline --all --graph --decorate'
 alias glogp='git log --pretty=format:"%h %s" --graph'
 
+# Branches
+alias gbranches='git branch -a'
+alias gbranch='git checkout -b'
+alias granchp='git push -u origin'
+alias gb='git branch'
+alias gco='git checkout'
+
+# Git Stash
+alias gsl='git stash list'
+alias gds='git dif stash'
+alias gssave='git stash save'
+alias gspop='git stash pop'
 
 #============================
-# rails aliases
+# Rails Aliases
 #============================
 alias railss='rails server -p 8080 -b 0.0.0.0'
 alias z='zeus'
-
-# app aliases
-alias tailscraper='tail -f ~/coursekeepers/log/scraper.log'
-
 
 #============================
 # screen aliases
