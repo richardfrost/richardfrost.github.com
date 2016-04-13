@@ -16,6 +16,7 @@ alias update_screen="wget -q http://www.richardfrost.info/tools/screenrc -O $HOM
 alias ..="cd .."
 alias ..2="cd ../.."
 alias ...="cd ../.."
+alias pub_key="cat ~/.ssh/id_rsa.pub"
 
 # Add some easy shortcuts for formatted directory listings and add a touch of color.
 alias ls='ls -F --color=auto'
