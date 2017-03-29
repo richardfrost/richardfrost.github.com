@@ -4,7 +4,7 @@ https://keybase.io/phermium
 
 I hereby claim:
 
-  * I am an admin of http://richardfrost.info
+  * I am an admin of http://www.richardfrost.info
   * I am phermium (https://keybase.io/phermium) on keybase.
   * I have a public key with fingerprint 7DF8 B87B C650 251E 4008  B950 C13F E403 85EB CC82
 
@@ -22,16 +22,16 @@ To do so, I am signing this object:
             "username": "phermium"
         },
         "service": {
-            "hostname": "richardfrost.info",
+            "hostname": "www.richardfrost.info",
             "protocol": "http:"
         },
         "type": "web_service_binding",
         "version": 1
     },
-    "ctime": 1490808227,
+    "ctime": 1490808341,
     "expire_in": 157680000,
-    "prev": "9514921b191ae89369c644876510e52ed80b6fee624ddb9bf7a14a33aaa58d52",
-    "seqno": 9,
+    "prev": "1a6978421722b4f3e919632627cc0ce11f3a962e50c957f0350a5798323815ac",
+    "seqno": 10,
     "tag": "signature"
 }
 
@@ -41,30 +41,30 @@ which yields the signature:
 Version: Keybase OpenPGP v2.0.68
 Comment: https://keybase.io/crypto
 
-yMN2AnicbZJ9TFVlHMe5Ijde0iBHAcNRR7PEO3beX65ZswQaS2zEWAF6Pc85z+Ge
-Afdezn3hTYagFFJUaxPuxhAkyGI0TEOL4u3y0gRLMASVDV1i3BS0xTBoA3ou0/96
-/nn2+z2f3/f3/f32DGzy9wvW9b0+419x/3K5bqSvzun33tT8F8UYsMqFmLEYy4br
-F8yRod1hylZlzIjhBIlDWmJ4mmIgI7KyAlicZYGkMCzkGRwKIgNwAGgaJyhWIkVJ
-UHjI0ByUCREoMsNSPC5iBkxRLVlQs2mqxYFkOVnhAc8BiWVwkiEgjeM8EBhcIigF
-BRTPQCBJPIkKzVa7rwKZA6IdxqlWlEOBad3e//BPfOMErQgMJ5AMBSiSEWQRcILE
-kZzMSYrMQ4VEzQkK0oRECTyaSGJkFJIsSzC4DKAsr/t2rsvRMsVQIkCdCJySJEAg
-gOcUjmahpBCE4APtULOIuRDRNjPUclVnLlZiwFDWpUrQt1jfJI8JTZXMoiYrGkrF
-qRbFN5RNszqskjUHPZsdDpvRV+0otPnwfAhMj4VMQLXIaJeowAU1u2q1YEYCkZJD
-9SkTtIDzOE+SnAGDBTZVgybVRzAcy+Po+NpAF5IUGISSBCAEQoS8QLGCxNI0z6Gd
-4JAhoczjgFUgZElaloEAFE4kaJGiRFFkeJnxbdoO8yxWzCggm2IWkrSrWRbR4dQg
-VuLpy9zopwv20wds8P0xv+Cg0Cc/b9HwzFpS18lDXYbSROe7KW2V1Q+byo5stlff
-nXhzR7On/e/XJk8HpMivvLSU8atl+VJoB0d+2dPaaHaGVyWb6wv/LUiKvTZZNL7M
-xc8HjjR9vLMsWITe5mc/JPVDf7ad8LbsOeD/1IX3ZxtLktNu6UHN+ZixM3kJP+Vv
-DjuQFp/xW8XLn8dbwo+3fjU380e35ox6cHDU48n8rD3S1Jx+1ZyeeKy091p/w9yl
-529mpnz7SxE7e9vZ76r8fdl9fteV6MzYk8ZvFs6149OZ83pH8uFh3dBWOtgw7B0b
-/NpQcsPvo0XiXkjvG2udU64Wb/HiW935fH1exnb3QukebjT9Rt+LTVev92zdnXSn
-zpFY414Tj8f29qclXu5e+TH1VXn0ue+vV5dFZOxfjJwerazdVpSwMM/fO9J7JwHT
-LY4n77i491FUf1hBxFh2bh2NbYNJ+IPp1UljkDQW1fUw4OelnGlrwqpntSV0S8ft
-sycuHDrVNpJI9he70/N2B9TmzLTrHpnPxN5f6W7d8HT5Pveu0amQtv21qTHfTXRW
-rJneiT7a81fpC3PHrlSfPTpQfm514odo86Zbn0gj4ePuavdgR9xB2LiyseqfzpXw
-3NNF3sade+PvpkeccseUF8zqQ6oGLoZ5XDcDJ4eLtm+JCVzSt8x/ENS0rywlNQR3
-NrQOHX67r2bh0wz9UIc3crC+Af8PkbbRcA==
-=ogxL
+yMN5AnicbZJ/TFVlGMcvP+WXRJZbhgI7TWDCvTvv+X0uMMmZVGtJFAUTvJ7znvfA
+Ebj3dn+KoARoal1FB2Mzmr9AitSYphJKs1stdHChHDUSIjGcGr/MRUNR6b1M/+v9
+593z7Pt8nuf7vO8Pi4N0EQHe1WNBO8d7awJ6vEecuryhqaUVhGxRygljBVGCFi5U
+qiC7w1SiKYSRIAFFIgayAkOziJU4RZU5kuNkqLIcElgSiRIrk7LMMCSgOUhJUFQF
+xDI8UoAkqwrL0QIpEamEqpmLkM1q08wOjOUVVZAFXoYcS1IsQAxJCrLIkhDQKg5o
+gUUyhAKFC4stdn8FHk6W7MigWXAOB6aF8f5H/3RuEjCqyPIixdIyTbGiIsm8CHmK
+V3ioKgJSKdwc0IgBkBYF7AiyCg4pjgMsqchIURbmdi7gGIVmaUnGnQBJQygDLBB4
+lWc4BFUARL/QjmxmqQxhtbUY2co0ZxmxLZXAWZcGkX+xfidPFG6322DTYLFkU1Qb
+Ths0s+o3ZrVZHBZoKcWSYofDavQTHOXWhRIkm57ATLJmVvA+cYEL2eyaxUwYAVZC
+h+anA0YkBVKgGZBKoC1WzYZMml/B8pxA4uNvg1wYCSRO5AWGAjxFyYxKIxGIHE1x
+FA8hCREAKi2JHIXwu+BNqiTNkhLeqEBTtABYCRJ+e++bLZiNoQ6pCDPtWpFZcjht
+iNj2nbcgWBcQoQsNCfR/NF1EeMzT71d7OEbX5IhypVSn31tcFVLIezvkJSWv3ejP
+OF1X2VKdqR295lvr/Wd/c1NbvAmErM7LDvxW/6h+34pNvpTAWPehvkJXr3tIei7p
+5eDIjJKE1DpDfHA0d6cm8YyYmfVFtj22fSB08zfdN2ZnBhqTp0Pudnvmz7CZUUuJ
+2JO/Few51RSmVm44Fv7w2HB0lLN+3fqe65eDUrLbD/7kiH+xYGx88GjwM+rMB3xr
++YnoFv0nwzfjhh3rBntmwno37ri4ymsU27Oa5gcfwvvLzEgI/3fL7ZjOhLhZ/i1x
+5HKDLme9/tp0xwPCs/Pxj56owQrPue+tfRkp5P6u0q9uw4E39Ur8XP8Lb89VTn3+
+4e/6tpz39jUk3p/+OO7kyKrJtDpfx2ywvdHnadV7LuRPTb7EMHde/fuPBufER8Pp
+1VefrV3bdbAqt4Vfmd9yavQuSBv9a++mW7cicycma89WhW6l/4zpG/lsd31yZ+/X
+AzcvbT8endSXcyBgaL5r+c+PgyZLIjcsH809f33iyuZfjDPli3znI3ZtHf606cui
+dwd6Qxet081FgxM8YVji2tO4o7/glam6xPL8RwkrcpqvtJqLutJ3N+uf334uf9nr
+lYf10OQJy7u3smZUPl3WZqguvJi1K/DIO5V735id9Y2FZq/Rp1yNfNAdp/7aeeBC
+WnHGmqmh5BjbuDFv4+Ald9XxpENn5f8A3n/FFg==
+=ykrL
 -----END PGP MESSAGE-----
 
 And finally, I am proving ownership of this host by posting or
